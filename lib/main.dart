@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,13 +17,30 @@ class MyApp extends StatelessWidget {
           centerTitle: true,
           title: Text(
             'ТАПШЫРМА-03',
-            style: TextStyle(color: Colors.white),
+            style: TextStyle(color: Colors.black),
           ),
           backgroundColor: Colors.orange,
         ),
         body: Center(
-          child: Image(
-            image: AssetImage('images/iamrich.png'),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                "I'm Rich",
+                style: GoogleFonts.sofia(
+                  color: Colors.black,
+                  fontSize: 45,
+                ),
+              ),
+              Text(
+                "I'm Rich",
+                style: GoogleFonts.sofia(
+                  color: Color.fromARGB(255, 212, 30, 30),
+                  fontSize: 45,
+                ),
+              ),
+              Image.asset('images/iamrich.png'),
+            ],
           ),
         ),
       ),
